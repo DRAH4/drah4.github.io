@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Algorithms & Data Structures Artifact - Ticketing System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 40px; background: #f4f4f4; }
+    .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
+    h1, h2, h3 { color: #333; }
+    a { color: #1a73e8; }
+    ul { margin-left: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Algorithms and Data Structures Artifact</h1>
+
+    <h2>Artifact Description</h2>
+    <p>
+      This artifact is the ticket list and filtering logic inside my Full Stack Ticketing System. The original version of the ticket list was just static HTML rows. There was no real data handling, and the page did not react to user input beyond the basic select dropdowns.
+    </p>
+
+    <h2>Why I Chose This Artifact</h2>
+    <p>
+      I chose this piece for the algorithms and data structures category because it is where I started treating the tickets as real data instead of just static markup. It let me show that I can take an array of ticket objects, sort and filter them, and keep the UI in sync as the user interacts with the page.
+    </p>
+
+    <h2>Key Enhancements</h2>
+    <p>For this category, I focused on the logic that works with the ticket data:</p>
+    <ul>
+      <li>Created a <code>renderTickets(list)</code> function that takes an array of ticket objects and builds the table rows dynamically.</li>
+      <li>Added “Oldest Tickets,” “High Priority,” and “Open Tickets” quick filter buttons that sort or filter the tickets based on created date, priority, or status.</li>
+      <li>Added dropdown filters for type, status, owner, priority, and assignee that can all work together at the same time.</li>
+      <li>Wrote a central <code>applyFilters()</code> function that checks each active filter and returns only the tickets that match all of them.</li>
+      <li>Updated the code so ticket data comes from storage or the backend and is passed through the same render and filter logic.</li>
+    </ul>
+
+    <h2>Course Outcomes Demonstrated</h2>
+    <p>
+      These enhancements support the outcome about designing and evaluating computing solutions that solve a problem using algorithmic principles, while managing trade offs. I had to think about how to structure the filters so they did not fight each other, and how to keep the logic simple enough to maintain but flexible enough to handle multiple conditions at once.
+    </p>
+
+    <h2>Reflection on the Process</h2>
+    <p>
+      At first I wrote each filter separately and they did not work well together. If I cleared one filter it would ignore the others and reset everything. Moving to a single <code>applyFilters()</code> function forced me to treat the tickets array as data that flows through a series of conditions. That made the behavior much easier to reason about. I also learned to think more carefully about how and when I call <code>renderTickets()</code> so I am not duplicating work. Overall, this part of the project helped me connect what I learned about arrays, filtering, and sorting to a real UI with actual user controls.
+    </p>
+
+    <p><a href="index.html">Back to Home</a></p>
+  </div>
+</body>
+</html>
