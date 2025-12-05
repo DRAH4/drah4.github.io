@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Database Artifact - Ticketing System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 40px; background: #f4f4f4; }
+    .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
+    h1, h2, h3 { color: #333; }
+    a { color: #1a73e8; }
+    ul { margin-left: 20px; }
+    code { background: #f0f0f0; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Database Artifact</h1>
+
+    <h2>Artifact Description</h2>
+    <p>
+      This artifact is the database and backend layer for my Full Stack Ticketing System. Originally the app used localStorage and hard coded ticket data. There was no real database and data was not shared beyond the browser. For the database enhancement I introduced a MySQL database and a Node.js backend that exposes API routes.
+    </p>
+
+    <h2>Why I Chose This Artifact</h2>
+    <p>
+      I chose this part of the project because it shows that I can work beyond the front end and actually design and connect a relational database. It also shows that I can build a simple but real backend with Express and MySQL where tickets are created, stored, and later fetched for display on the ticket list and view pages.
+    </p>
+
+    <h2>Key Enhancements</h2>
+    <p>For the database category, I implemented the following:</p>
+    <ul>
+      <li>Created a MySQL database called <code>ticket_system</code>.</li>
+      <li>Designed a <code>tickets</code> table with columns for subject, description, priority, assignee, type, status, owner, and createdAt.</li>
+      <li>Created a <code>comments</code> table with a foreign key back to <code>tickets.id</code> and cascading deletes so comments are cleaned up automatically.</li>
+      <li>Set up a Node.js server using Express and <code>mysql2</code> with a connection pool.</li>
+      <li>Implemented a <code>GET /api/tickets</code> route to return all tickets ordered by created date.</li>
+      <li>Implemented a <code>POST /api/tickets</code> route that validates required fields and inserts new tickets using parameterized queries.</li>
+      <li>Updated the front end create and list pages to use <code>fetch</code> calls to talk to the backend instead of relying only on localStorage.</li>
+    </ul>
+
+    <h2>Course Outcomes Demonstrated</h2>
+    <p>
+      This enhancement maps to the database and software engineering outcomes, and it touches the security mindset outcome as well. I had to think about schema design, primary keys, and relationships between tickets and comments. On the security side I used parameterized queries instead of string concatenation to help protect against SQL injection and handled database errors instead of ignoring them.
+    </p>
+
+    <h2>Reflection on the Process</h2>
+    <p>
+      Getting MySQL installed and connected on Windows took some patience. I had to work through connection errors like the root user not having a password set correctly and make sure the pool configuration matched my local setup. Once the connection worked, wiring up the API routes was straightforward but still required careful testing with tools like the browser console and simple <code>fetch</code> calls. Moving from localStorage to a real database made the app feel more like an actual product and less like a demo. It also helped me see how the front end, backend, and database all depend on each other, and how small mistakes in one layer can break the others.
+    </p>
+
+    <p><a href="index.html">Back to Home</a></p>
+  </div>
+</body>
+</html>
