@@ -19,34 +19,33 @@
 
     <h2>Artifact Description</h2>
     <p>
-      This artifact is the database and backend layer for my Full Stack Ticketing System. Originally the app used localStorage and hard coded ticket data. There was no real database and data was not shared beyond the browser. For the database enhancement I introduced a MySQL database and a Node.js backend that exposes API routes.
+      For this milestone, I worked on the database and backend for my Full Stack Ticketing System. This enhancement replaces the temporary localStorage setup with a real MySQL database and a Node.js/Express API. The database stores tickets and comments, and the backend handles all communication between the frontend and MySQL.
     </p>
 
     <h2>Why I Chose This Artifact</h2>
     <p>
-      I chose this part of the project because it shows that I can work beyond the front end and actually design and connect a relational database. It also shows that I can build a simple but real backend with Express and MySQL where tickets are created, stored, and later fetched for display on the ticket list and view pages.
+      I selected this artifact for my ePortfolio because it shows that I can move beyond frontend work and build the backend structure that makes the application fully functional. Adding a database and API demonstrates my ability to design structured data, build backend routes, and connect all parts of a full stack application.
     </p>
 
     <h2>Key Enhancements</h2>
-    <p>For the database category, I implemented the following:</p>
+    <p>For this database-focused milestone, I implemented the following:</p>
     <ul>
-      <li>Created a MySQL database called <code>ticket_system</code>.</li>
-      <li>Designed a <code>tickets</code> table with columns for subject, description, priority, assignee, type, status, owner, and createdAt.</li>
-      <li>Created a <code>comments</code> table with a foreign key back to <code>tickets.id</code> and cascading deletes so comments are cleaned up automatically.</li>
-      <li>Set up a Node.js server using Express and <code>mysql2</code> with a connection pool.</li>
-      <li>Implemented a <code>GET /api/tickets</code> route to return all tickets ordered by created date.</li>
-      <li>Implemented a <code>POST /api/tickets</code> route that validates required fields and inserts new tickets using parameterized queries.</li>
-      <li>Updated the front end create and list pages to use <code>fetch</code> calls to talk to the backend instead of relying only on localStorage.</li>
+      <li>Created the MySQL database <code>ticket_system</code> along with tables for tickets and comments.</li>
+      <li>Added a relational structure where comments reference the ticket they belong to using a foreign key.</li>
+      <li>Set up a Node.js backend using Express and <code>mysql2</code> with a connection pool.</li>
+      <li>Built secure API routes for creating, retrieving, updating, and deleting tickets.</li>
+      <li>Updated the frontend so it communicates with the backend API instead of using localStorage.</li>
+      <li>Introduced data validation and parameterized queries to prevent SQL injection.</li>
     </ul>
 
     <h2>Course Outcomes Demonstrated</h2>
     <p>
-      This enhancement maps to the database and software engineering outcomes, and it touches the security mindset outcome as well. I had to think about schema design, primary keys, and relationships between tickets and comments. On the security side I used parameterized queries instead of string concatenation to help protect against SQL injection and handled database errors instead of ignoring them.
+      This enhancement supports the outcomes related to database design, secure coding, and applying computing tools to build working solutions. It also touches the security mindset by ensuring queries are parameterized and the backend is responsible for safely handling user input. The remaining outcomes I need to meet involve algorithms and data-handling logic that will interact with the database, which I’ll work on next.
     </p>
 
     <h2>Reflection on the Process</h2>
     <p>
-      Getting MySQL installed and connected on Windows took some patience. I had to work through connection errors like the root user not having a password set correctly and make sure the pool configuration matched my local setup. Once the connection worked, wiring up the API routes was straightforward but still required careful testing with tools like the browser console and simple <code>fetch</code> calls. Moving from localStorage to a real database made the app feel more like an actual product and less like a demo. It also helped me see how the front end, backend, and database all depend on each other, and how small mistakes in one layer can break the others.
+      While building this enhancement, I learned how the backend and frontend depend on each other and how important consistent data flow is. The biggest challenge was getting MySQL installed and configured correctly on Windows, especially resolving connection errors and authentication issues. Once the database connection was working, everything started coming together and the project felt like a real full stack application instead of a frontend demo.
     </p>
 
     <p><a href="index.html">Back to Home</a></p>
