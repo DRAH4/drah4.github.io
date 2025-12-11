@@ -19,32 +19,32 @@
 
     <h2>Artifact Description</h2>
     <p>
-      This artifact is the ticket list and filtering logic inside my Full Stack Ticketing System. The original version of the ticket list was just static HTML rows. There was no real data handling, and the page did not react to user input beyond the basic select dropdowns.
+      For this enhancement, I focused on the algorithms and data structure component of my Full Stack Ticketing System. This artifact includes the sorting and filtering logic used on the ticket list page, which I built during this milestone as the project shifted from a static layout to a functional application. The original version had hard-coded rows and no real logic for organizing or processing ticket data.
     </p>
 
     <h2>Why I Chose This Artifact</h2>
     <p>
-      I chose this piece for the algorithms and data structures category because it is where I started treating the tickets as real data instead of just static markup. It let me show that I can take an array of ticket objects, sort and filter them, and keep the UI in sync as the user interacts with the page.
+      I chose this artifact for my ePortfolio because it demonstrates practical algorithmic skills in a real application. It shows how I designed solutions that sort tickets by date, apply multiple filters at the same time, and handle actual data instead of static HTML. These improvements made the ticket list fully interactive and reflect my ability to use algorithms to solve real-world problems.
     </p>
 
     <h2>Key Enhancements</h2>
-    <p>For this category, I focused on the logic that works with the ticket data:</p>
+    <p>The main enhancements implemented for this milestone include:</p>
     <ul>
-      <li>Created a <code>renderTickets(list)</code> function that takes an array of ticket objects and builds the table rows dynamically.</li>
-      <li>Added “Oldest Tickets,” “High Priority,” and “Open Tickets” quick filter buttons that sort or filter the tickets based on created date, priority, or status.</li>
-      <li>Added dropdown filters for type, status, owner, priority, and assignee that can all work together at the same time.</li>
-      <li>Wrote a central <code>applyFilters()</code> function that checks each active filter and returns only the tickets that match all of them.</li>
-      <li>Updated the code so ticket data comes from storage or the backend and is passed through the same render and filter logic.</li>
+      <li>Building a dynamic <code>renderTickets(list)</code> function that generates table rows from an array of ticket objects.</li>
+      <li>Implementing quick filters such as “Oldest Tickets,” “High Priority,” and “Open Tickets.”</li>
+      <li>Adding dropdown filters for type, status, owner, priority, and assignee that can all work together.</li>
+      <li>Developing a unified <code>applyFilters()</code> function that evaluates all filter conditions at once.</li>
+      <li>Ensuring that clearing one filter does not reset the others by improving the filtering logic.</li>
     </ul>
 
     <h2>Course Outcomes Demonstrated</h2>
     <p>
-      These enhancements support the outcome about designing and evaluating computing solutions that solve a problem using algorithmic principles, while managing trade offs. I had to think about how to structure the filters so they did not fight each other, and how to keep the logic simple enough to maintain but flexible enough to handle multiple conditions at once.
+      This enhancement supports the outcome related to designing and evaluating computing solutions using algorithmic principles. I had to think about the structure of the filtering logic, how to prevent conflicts between filters, and how to manage trade-offs between readability and flexibility. The result is a clean and maintainable approach for processing ticket data.
     </p>
 
     <h2>Reflection on the Process</h2>
     <p>
-      At first I wrote each filter separately and they did not work well together. If I cleared one filter it would ignore the others and reset everything. Moving to a single <code>applyFilters()</code> function forced me to treat the tickets array as data that flows through a series of conditions. That made the behavior much easier to reason about. I also learned to think more carefully about how and when I call <code>renderTickets()</code> so I am not duplicating work. Overall, this part of the project helped me connect what I learned about arrays, filtering, and sorting to a real UI with actual user controls.
+      Initially, each filter worked independently, which caused issues—clearing one filter would reset the list and ignore the others. Designing a single combined filtering function solved this and helped me better understand how to handle multiple conditions with arrays. It also taught me the importance of data flow and when to trigger UI updates. This enhancement aligned well with my planned outcomes, and I didn’t need to change my outcome coverage plan because the work naturally fit the goals I set for this milestone.
     </p>
 
     <p><a href="index.html">Back to Home</a></p>
