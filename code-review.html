@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Code Review - Full Stack Ticketing System</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body { font-family: Arial, sans-serif; padding: 40px; background: #f4f4f4; }
-    .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
-    h1, h2 { color: #333; }
-    iframe { border-radius: 8px; }
-    a { color: #1a73e8; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Code Review | David Rahmey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="shared.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Code Review - Full Stack Ticketing System</h1>
-    <p>
-      This video walks through the original version of my Full Stack Ticketing System and explains the planned enhancements for software design, algorithms and data structures, and databases.
-    </p>
-          
-    <iframe
-      width="100%"
-      height="400"
-      src="https://youtu.be/94b6Raf1c4M"
-      title="Code Review Video"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
 
-    <p>
-      If the video does not load, click here:<br>
-      <a href="https://youtu.be/94b6Raf1c4M" target="_blank">Open Code Review Video on YouTube</a>
-    </p>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
 
-    <p><a href="index.html">Back to Home</a></p>
+<nav>
+  <a class="nav-logo" href="index.html">DR / v2</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#projects">Artifacts</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>/</span>
+    Code Review
   </div>
+
+  <p class="artifact-label">Course Artifact</p>
+  <h1>Code Review</h1>
+
+  <div class="page-meta">
+    <span class="meta-pill accent">Video Walkthrough</span>
+    <span class="meta-pill">Full Stack Ticketing</span>
+    <span class="meta-pill">Refactoring</span>
+  </div>
+
+  <div class="section-block highlight">
+    <h2>Overview</h2>
+    <p>This video walks through the original version of my Full Stack Ticketing System and explains the planned enhancements for software design, algorithms and data structures, and databases. It covers the existing codebase, identifies areas for improvement, and outlines the goals for each upcoming milestone.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Video Walkthrough</h2>
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+        title="Code Review: Full Stack Ticketing System"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p style="font-family: var(--mono); font-size: 12px; color: var(--text-dim); margin-top: 0.75rem;">
+      If the video does not load, <a href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">open it on YouTube</a>.
+    </p>
+  </div>
+
+  <div class="back-row">
+    <a class="back-link" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
+      Back to Home
+    </a>
+  </div>
+
+</div>
 </body>
 </html>
