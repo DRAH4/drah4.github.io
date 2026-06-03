@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Database Artifact - Ticketing System</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body { font-family: Arial, sans-serif; padding: 40px; background: #f4f4f4; }
-    .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
-    h1, h2, h3 { color: #333; }
-    a { color: #1a73e8; }
-    ul { margin-left: 20px; }
-    code { background: #f0f0f0; padding: 2px 4px; border-radius: 4px; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Database | David Rahmey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="shared.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Database Artifact</h1>
 
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+<nav>
+  <a class="nav-logo" href="index.html">DR / v2</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#projects">Artifacts</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>/</span>
+    Database
+  </div>
+
+  <p class="artifact-label">Course Artifact</p>
+  <h1>Database<br/>Management</h1>
+
+  <div class="page-meta">
+    <span class="meta-pill accent">MySQL</span>
+    <span class="meta-pill">Node.js</span>
+    <span class="meta-pill">Express</span>
+    <span class="meta-pill">REST API</span>
+    <span class="meta-pill">SQL Injection Prevention</span>
+  </div>
+
+  <div class="section-block highlight">
     <h2>Artifact Description</h2>
-    <p>
-      For this milestone, I worked on the database and backend for my Full Stack Ticketing System. This enhancement replaces the temporary localStorage setup with a real MySQL database and a Node.js/Express API. The database stores tickets and comments, and the backend handles all communication between the frontend and MySQL.
-    </p>
+    <p>For this milestone, I worked on the database and backend for my Full Stack Ticketing System. This enhancement replaces the temporary localStorage setup with a real MySQL database and a Node.js/Express API. The database stores tickets and comments, and the backend handles all communication between the frontend and MySQL.</p>
+  </div>
 
+  <div class="section-block">
     <h2>Why I Chose This Artifact</h2>
-    <p>
-      I selected this artifact for my ePortfolio because it shows that I can move beyond frontend work and build the backend structure that makes the application fully functional. Adding a database and API demonstrates my ability to design structured data, build backend routes, and connect all parts of a full stack application.
-    </p>
+    <p>I selected this artifact for my ePortfolio because it shows that I can move beyond frontend work and build the backend structure that makes the application fully functional. Adding a database and API demonstrates my ability to design structured data, build backend routes, and connect all parts of a full stack application.</p>
+  </div>
 
+  <div class="section-block">
     <h2>Key Enhancements</h2>
     <p>For this database focused milestone, I implemented the following:</p>
     <ul>
@@ -37,18 +64,25 @@
       <li>Updated the frontend so it communicates with the backend API instead of using localStorage.</li>
       <li>Introduced data validation and parameterized queries to prevent SQL injection.</li>
     </ul>
-
-    <h2>Course Outcomes Demonstrated</h2>
-    <p>
-      This enhancement supports the outcomes related to database design, secure coding, and applying computing tools to build working solutions. It also touches the security mindset by ensuring queries are parameterized and the backend is responsible for safely handling user input. The remaining outcomes I need to meet involve algorithms and data handling logic that will interact with the database, which I’ll work on next.
-    </p>
-
-    <h2>Reflection on the Process</h2>
-    <p>
-      While building this enhancement, I learned how the backend and frontend depend on each other and how important consistent data flow is. The biggest challenge was getting MySQL installed and configured correctly on Windows, especially resolving connection errors and authentication issues. Once the database connection was working, everything started coming together and the project felt like a real full stack application instead of a frontend demo.
-    </p>
-
-    <p><a href="index.html">Back to Home</a></p>
   </div>
+
+  <div class="section-block">
+    <h2>Course Outcomes Demonstrated</h2>
+    <p>This enhancement supports the outcomes related to database design, secure coding, and applying computing tools to build working solutions. It also touches the security mindset by ensuring queries are parameterized and the backend is responsible for safely handling user input. The remaining outcomes I need to meet involve algorithms and data handling logic that will interact with the database, which I'll work on next.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Reflection on the Process</h2>
+    <p>While building this enhancement, I learned how the backend and frontend depend on each other and how important consistent data flow is. The biggest challenge was getting MySQL installed and configured correctly on Windows, especially resolving connection errors and authentication issues. Once the database connection was working, everything started coming together and the project felt like a real full stack application instead of a frontend demo.</p>
+  </div>
+
+  <div class="back-row">
+    <a class="back-link" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
+      Back to Home
+    </a>
+  </div>
+
+</div>
 </body>
 </html>
