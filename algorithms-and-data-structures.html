@@ -1,53 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Algorithms & Data Structures Artifact - Ticketing System</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body { font-family: Arial, sans-serif; padding: 40px; background: #f4f4f4; }
-    .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
-    h1, h2, h3 { color: #333; }
-    a { color: #1a73e8; }
-    ul { margin-left: 20px; }
-    code { background: #f0f0f0; padding: 2px 4px; border-radius: 4px; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Algorithms &amp; Data Structures | David Rahmey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="shared.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Algorithms & Data Structures Artifact</h1>
 
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+<nav>
+  <a class="nav-logo" href="index.html">DR / v2</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#projects">Artifacts</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>/</span>
+    Algorithms &amp; Data Structures
+  </div>
+
+  <p class="artifact-label">Course Artifact</p>
+  <h1>Algorithms &amp;<br/>Data Structures</h1>
+
+  <div class="page-meta">
+    <span class="meta-pill accent">DSA</span>
+    <span class="meta-pill">Big-O</span>
+    <span class="meta-pill">Sorting</span>
+    <span class="meta-pill">Filtering</span>
+    <span class="meta-pill">Graphs</span>
+  </div>
+
+  <div class="section-block highlight">
     <h2>Artifact Description</h2>
-    <p>
-      For this enhancement, I focused on the algorithms and data structure component of my Full Stack Ticketing System. This artifact includes the sorting and filtering logic used on the ticket list page, which I built during this milestone as the project shifted from a static layout to a functional application. The original version had hard coded rows and no real logic for organizing or processing ticket data.
-    </p>
+    <p>For this enhancement, I focused on the algorithms and data structure component of my Full Stack Ticketing System. This artifact includes the sorting and filtering logic used on the ticket list page, which I built during this milestone as the project shifted from a static layout to a functional application. The original version had hard coded rows and no real logic for organizing or processing ticket data.</p>
+  </div>
 
+  <div class="section-block">
     <h2>Why I Chose This Artifact</h2>
-    <p>
-      I chose this artifact for my ePortfolio because it demonstrates practical algorithmic skills in a real application. It shows how I designed solutions that sort tickets by date, apply multiple filters at the same time, and handle actual data instead of static HTML. These improvements made the ticket list fully interactive and reflect my ability to use algorithms to solve real world problems.
-    </p>
+    <p>I chose this artifact for my ePortfolio because it demonstrates practical algorithmic skills in a real application. It shows how I designed solutions that sort tickets by date, apply multiple filters at the same time, and handle actual data instead of static HTML. These improvements made the ticket list fully interactive and reflect my ability to use algorithms to solve real world problems.</p>
+  </div>
 
+  <div class="section-block">
     <h2>Key Enhancements</h2>
     <p>The main enhancements implemented for this milestone include:</p>
     <ul>
       <li>Building a dynamic <code>renderTickets(list)</code> function that generates table rows from an array of ticket objects.</li>
-      <li>Implementing quick filters such as “Oldest Tickets,” “High Priority,” and “Open Tickets.”</li>
+      <li>Implementing quick filters such as "Oldest Tickets," "High Priority," and "Open Tickets."</li>
       <li>Adding dropdown filters for type, status, owner, priority, and assignee that can all work together.</li>
       <li>Developing a unified <code>applyFilters()</code> function that evaluates all filter conditions at once.</li>
       <li>Ensuring that clearing one filter does not reset the others by improving the filtering logic.</li>
     </ul>
-
-    <h2>Course Outcomes Demonstrated</h2>
-    <p>
-      This enhancement supports the outcome related to designing and evaluating computing solutions using algorithmic principles. I had to think about the structure of the filtering logic, how to prevent conflicts between filters, and how to manage trade offs between readability and flexibility. The result is a clean and maintainable approach for processing ticket data.
-    </p>
-
-    <h2>Reflection on the Process</h2>
-    <p>
-      Initially, each filter worked independently, which caused issues—clearing one filter would reset the list and ignore the others. Designing a single combined filtering function solved this and helped me better understand how to handle multiple conditions with arrays. It also taught me the importance of data flow and when to trigger UI updates. This enhancement aligned well with my planned outcomes, and I didn’t need to change my outcome coverage plan because the work naturally fit the goals I set for this milestone.
-    </p>
-
-    <p><a href="index.html">Back to Home</a></p>
   </div>
+
+  <div class="section-block">
+    <h2>Course Outcomes Demonstrated</h2>
+    <p>This enhancement supports the outcome related to designing and evaluating computing solutions using algorithmic principles. I had to think about the structure of the filtering logic, how to prevent conflicts between filters, and how to manage trade offs between readability and flexibility. The result is a clean and maintainable approach for processing ticket data.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Reflection on the Process</h2>
+    <p>Initially, each filter worked independently, which caused issues where clearing one filter would reset the list and ignore the others. Designing a single combined filtering function solved this and helped me better understand how to handle multiple conditions with arrays. It also taught me the importance of data flow and when to trigger UI updates. This enhancement aligned well with my planned outcomes, and I didn't need to change my outcome coverage plan because the work naturally fit the goals I set for this milestone.</p>
+  </div>
+
+  <div class="back-row">
+    <a class="back-link" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
+      Back to Home
+    </a>
+  </div>
+
+</div>
 </body>
 </html>
